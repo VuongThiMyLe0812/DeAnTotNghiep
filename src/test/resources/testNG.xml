@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Automation Suite" verbose="1" parallel="false">
+
+    <listeners>
+        <listener class-name="Common.TestListener"/>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+    <test name="Functional Tests">
+        <classes>
+            <class name="Test.Login"/>
+            <class name="Test.CheckRegistrationManagement"/>
+            <class name="Test.RegisterExamResults"/>
+            <class name="Test.Search_Exam_Management"/>
+            <class name="Test.DetailedResultsExam"/>
+            <class name="Test.Filter_TestValidation"/>
+            <class name="Test.DetailResultsTestValidation"/>
+            <class name="Test.SubjectRegistration"/>
+            <class name="Test.SubjectDelete"/>
+            <class name="Test.SubjectEdit"/>
+        </classes>
+    </test>
+</suite>
